@@ -69,11 +69,11 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="Administración de Docentes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Administración de Docentes.Designer.vb">
+      <DependentUpon>Administración de Docentes.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -91,13 +91,34 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Nuevo Docente.Designer.vb">
+      <DependentUpon>Nuevo Docente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Nuevo Docente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel_del_Docente.Designer.vb">
+      <DependentUpon>Panel_del_Docente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_del_Docente.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Administración de Docentes.resx">
+      <DependentUpon>Administración de Docentes.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nuevo Docente.resx">
+      <DependentUpon>Nuevo Docente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel_del_Docente.resx">
+      <DependentUpon>Panel_del_Docente.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
